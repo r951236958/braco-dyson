@@ -9,12 +9,12 @@
   <!-- Open Sans by Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
- 
+
 </head>
 
 <body>
   <nav class="navbar bg-dark">
-      <img class="logo-img" src="img/me.jpg" alt="me">
+    <img class="logo-img" src="img/me.jpg" alt="me">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="/">首頁</a>
@@ -36,12 +36,62 @@
   <h1>HTML、CSS練習</h1>
 
   <h3>Form練習</h3>
-  <form action="index.html">
-    <input type="text" name="Name">
-    <input type="text" name="tel">
+  <form class="form-test" action="index.html">
+    <div class="form-email">
+      <h4 class="form-title">個人資料</h4>
+      <label for="mail">Email: </label>
+      <input id="mail" type="text" placeholder="請輸入電子郵件" name="mail">
+    </div>
+    <div class="form-name">
+      <label for="name">姓名: </label>
+      <input id="name" type="text" placeholder="請輸入姓名" name="name">
+    </div>
+    <div class="form-gender">
+      <h3 class="form-title">性別</h3>
+      <input type="radio" name="gender" value="male">男<br>
+      <input type="radio" name="gender" value="female">女
+    </div>
+    <div class="form-birthday">
+      <h4 class="form-title">生日</h4>
+      <select name="birthday-year" id="birthday-year">
+        <option value="1986">1986</option>
+        <option value="1987">1987</option>
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+      </select>
+      <span>年</span>
+      <select name="birthday-month" id="birthday-month">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <span>月</span>
+      <select name="birthday-date" id="birthday-date">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <span class="form-birthday-date">日</span>
+    </div>
+    <div class="form-hobbies">
+      <h4 class="form-title">興趣</h4>
+      <input type="checkbox" name="hobbies1" value="movie">電影<br>
+      <input type="checkbox" name="hobbies2" id="music">音樂<br>
+      <input type="checkbox" name="hobbies3" id="videogame">電玩<br>
+      <input type="checkbox" name="hobbies4" id="running">跑步<br>
+    </div>
+    <div class="form-message">
+      <h4 class="form-title">其他意見</h4>
+      <textarea name="message"></textarea>
+    </div>
     <input type="submit" value="送出">
   </form>
-  
+<h3>border-radius練習</h3>
+<div class="circle-div"></div>
 </body>
 
 </html>
