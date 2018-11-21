@@ -3,7 +3,7 @@
 
 # Macbook使用Git提交時忽略 ```.DS_Store```
 
-## 在GitHub專案中新增 '.gitignore' 文件
+## 在GitHub專案中新增 ```.gitignore``` 文件
 
 - 使用星號註記忽略檔案
 - 透過在 ```.gitconfig``` 中添加 ```.gitignore_global``` 完成全局配置
