@@ -1,6 +1,6 @@
 ---
-layout: default
 ---
+
 # Macbook使用Git提交時忽略 '.DS_Store'
 
 ## 在GitHub專案中新增 '.gitignore' 文件
