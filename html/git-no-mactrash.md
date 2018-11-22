@@ -16,7 +16,7 @@
 
 ### 操作步驟
 
-在GitHub專案目錄新增 ```.gitignore```配置文件
+- 在GitHub專案目錄新增 ```.gitignore```配置文件
 
 1.  建立檔案 ```.gitignore``` , 並將以下貼上儲存檔案
 2.  如果已經有此文件存在, 直接修改文件並新增以下內容
@@ -28,7 +28,7 @@
 
 3. 此配置完成後, 表示git提交時忽略該目錄與其子目錄中的所有.DS_Store檔案
 
-在家目錄中git配置文件裡面添加全局配置文件的檔案路徑來完成全局配置 
+- 在家目錄中git配置文件裡面添加全局配置文件的檔案路徑來完成全局配置 
 
 1.  在家目錄 ```$HOME``` 裡面新增全局配置所需導入之檔案 ```.gitignore_global```
 2.  該檔案內容與 ```.gitignore``` 相同
@@ -40,7 +40,7 @@
 excludesfile = /Users/your-HOME/.gitignore_global
 ```
 
-### 配置完成
+- 配置完成
 
 > 如需刪除之前已經上傳過的 ```.DS_Store``` , 可嘗試以下指令
 
@@ -53,4 +53,4 @@ git commit -m 'delete .DS_Store'
 git push origin master
 ```
 
-### 打完收工
+- 打完收工
