@@ -17,3 +17,28 @@ function getRandomArray(minNum, maxNum, n) {	//隨機產生不重覆的n個數�
 	}
 	return rdmArray;
 }
+function generate(){ 
+    var A="ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+    var a="abcdefghijklmnopqrstuvwxyz"; 
+    var num="1234567890"; 
+    var other="~`!@#$%^&*()-_+=[{]}\\|;:'\",<.>/?"; 
+    var sum=""; 
+    var length=document.getElementById("length").value; 
+    var output=""; 
+     
+    if(document.getElementById("english_b").checked) 
+        sum+=A; 
+    if(document.getElementById("english_l").checked) 
+        sum+=a; 
+    if(document.getElementById("number").checked) 
+        sum+=num; 
+    if(document.getElementById("other").checked) 
+        sum+=other; 
+         
+    sum=sum.split(''); 
+    while(length--){ 
+        var r=Math.floor(Math.random()*sum.length); 
+        output+=sum[r]; 
+    } 
+    document.getElementById("output").value=output; 
+} 
