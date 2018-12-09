@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="favicon.ico">
   <meta name='description' content='網站描述文字' />
   <meta name='keywords' content='keyword1, keyword2, keyword3' />
-  
+
   <!-- 使網頁透過FB分享時會顯示以下設定內容 -->
   <meta property="og:title" content="FB的標題" />
   <meta property="og:description" content="FB的描述">
@@ -63,8 +63,21 @@
     <div class="main">
       <div class="container">
         <h1>HTML、CSS練習</h1>
+        <div class="content get-random">
+          <h3>隨機亂碼產生器</h3>
+          <h5>亂數組合條件選項</h5>
+          <input type="checkbox" id="english_b" checked="checked" /><label for="english_b">大寫英文</label>
+          <input type="checkbox" id="english_l" checked="checked" /><label for="english_l">小寫英文</label>
+          <input type="checkbox" id="number" checked="checked" /><label for="number">數字</label>
+          <input type="checkbox" id="other" /><label for="other">特殊符號</label>
+          <h5>字串長度</h5>
+          <input type="text" id="length" value="10" /><br />
+          <input type="button" value="Generate" onclick="generate()" />
+          <h5>產生結果</h5>
+          <input type="text" id="output" />
+        </div>
         <!-- 表單 -->
-        <div class="form-content">
+        <div class="content form">
           <h3>Form練習</h3>
           <form class="form-test" action="index.html">
             <div class="form-email">
@@ -127,20 +140,20 @@
           <li>帶便當盒</li>
         </ul>
         <!-- 利用border-radius製作圓形區域 -->
-        <div class="border-radius-content">
+        <div class="content border-radius">
           <h3>border-radius練習</h3>
           <div class="box-area"></div>
         </div>
         <!-- gradient 漸層顏色 -->
-        <div class="gradient-content">
+        <div class="content gradient">
           <div class="box-area"></div>
         </div>
         <!-- Shadow 陰影效果 -->
-        <div class="shadow-content">
+        <div class="content shadow">
           <div class="box-area"></div>
         </div>
         <!-- 按鈕 -->
-        <div class="button-content">
+        <div class="content button">
           <h3>按鈕測試區</h3>
           <button class="button-btn-primary">測試</button>
           <button class="button-btn button-success">Success Button</button>
@@ -153,7 +166,7 @@
     <!-- Footer -->
     <div class="footer">
       <div class="container">
-        <div class="footer-content">
+        <div class="content footer">
           <div class="copyright">
             <p>&copy; Copyright 2018 Nick Lin All Rights Reserved</p>
           </div>
@@ -161,6 +174,7 @@
       </div>
     </div>
   </div>
+  <script src="js/random.js"></script>
 </body>
 
 </html>
