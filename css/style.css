@@ -878,9 +878,46 @@ a.button-btn-selected {
 .content {
     padding: 20px 10px;
 }
+
 .box-area {
     width: 600px;
     height: 400px;
+}
+
+.box-area1 {
+    width: 600px;
+    height: 800px;
+}
+
+.box-area2 {
+    width: 400px;
+    height: 400px;
+}
+
+.box-area3 {
+    width: 1000px;
+    height: 800px; 
+}
+
+.gradient-color1 {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.gradient-color2 {
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-color3 {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.gradient-color4 {
+    background: #fffc00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .content.border-radius .box-area {
